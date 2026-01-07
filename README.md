@@ -8,7 +8,7 @@ A modern, responsive portfolio website built with React, Vite, Tailwind CSS, and
 - 🎨 Beautiful UI with Tailwind CSS
 - ✨ Smooth animations with Framer Motion
 - 📱 Fully responsive design
-- 🚀 Ready for deployment on Vercel
+- 🚀 Ready for deployment on Netlify
 
 ## Quick Start
 
@@ -32,32 +32,34 @@ A modern, responsive portfolio website built with React, Vite, Tailwind CSS, and
    npm run preview
    ```
 
-## Deployment on Vercel
+## Deployment on Netlify
 
-### Option 1: Deploy via Vercel Dashboard (Recommended)
+### Option 1: Deploy via Netlify Dashboard (Recommended)
 
 1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com) and sign in
-3. Click "New Project"
-4. Import your GitHub repository
-5. Vercel will automatically detect Vite and configure everything
-6. Click "Deploy"
+2. Go to [netlify.com](https://netlify.com) and sign in
+3. Click "Add new site" → "Import an existing project"
+4. Connect your GitHub account and select your repository
+5. Netlify will automatically detect the build settings from `netlify.toml`:
+   - Build command: `npm install && npm run build`
+   - Publish directory: `dist`
+6. Click "Deploy site"
 
-### Option 2: Deploy via Vercel CLI
+### Option 2: Deploy via Netlify CLI
 
-1. Install Vercel CLI:
+1. Install Netlify CLI:
    ```bash
-   npm i -g vercel
+   npm i -g netlify-cli
    ```
 
-2. Deploy:
+2. Login:
    ```bash
-   vercel
+   netlify login
    ```
 
-3. For production:
+3. Deploy:
    ```bash
-   vercel --prod
+   netlify deploy --prod
    ```
 
 ## Project Structure
@@ -69,7 +71,7 @@ react_portfolio/
 │   ├── App.jsx     # Main application component
 │   ├── main.jsx    # Entry point
 │   └── index.css   # Global styles
-├── vercel.json     # Vercel configuration
+├── netlify.toml    # Netlify configuration
 ├── vite.config.js  # Vite configuration
 └── package.json    # Dependencies
 ```
