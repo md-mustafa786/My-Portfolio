@@ -2,6 +2,7 @@
   "version": 2,
   "outputDirectory": "dist",
   "framework": "vite",
+  "installCommand": "npm ci",
   "rewrites": [
     {
       "source": "/(.*)",
