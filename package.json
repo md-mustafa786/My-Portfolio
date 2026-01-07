@@ -4,8 +4,8 @@
   "type": "commonjs",
   "homepage": "https://md-mustafa786.github.io/Portfolio",
   "engines": {
-    "node": "18.x",
-    "npm": ">=9.0.0"
+    "node": "24.x",
+    "npm": ">=10.0.0"
   },
   "scripts": {
     "dev": "vite",
