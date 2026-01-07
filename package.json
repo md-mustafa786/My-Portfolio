@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node build.js",
+    "build": "bash build.sh || vite build",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
